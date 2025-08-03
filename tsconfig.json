@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "compilerOptions":{
+    "types": ["vitest"],
+    "jsx": "react-jsx",        // make sure this exists for React projects
+    "module": "ESNext",        // optional but common
+    "moduleResolution": "Node",
+    "target": "ESNext",
+  },
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
