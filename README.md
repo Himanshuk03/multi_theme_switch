@@ -1,69 +1,67 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌗 Multi-Theme Switcher React App
 
-Currently, two official plugins are available:
+A responsive and interactive React + TypeScript application featuring multiple theme options (Light, Dark, Colorful), animated product cards, scrollable rows with navigation arrows, and fake product data fetching.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## Expanding the ESLint configuration
+👉 [https://your-vercel-app.vercel.app](https://your-vercel-app.vercel.app)  
+*(Replace this with your actual Vercel deployment link after deployment)*
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+ **Frontend**: React, TypeScript, Tailwind CSS, ShadCN UI, AOS (Animate on Scroll)
+ **Routing**: React Router DOM
+ **Data Source**: [FakeStoreAPI](https://fakestoreapi.com/)
+ **Icons**: FontAwesome, Lucide React
+ **Deployment**: Vercel
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ Light / Dark / Colorful themes using Context API
+ Persistent theme state using `localStorage`
+ Responsive layout using Tailwind CSS
+ Animated product cards (AOS animations)
+ Horizontal scrolling rows with left/right arrow buttons
+ Contact/About pages with embedded Google Maps
+ Gradient Navbar and sticky header
+ FontAwesome icons and animated marquee for announcements
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Folder Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+multi_theme_switch/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── Header.tsx
+│ │ ├── Sidebar.tsx
+│ │ ├── ThemeSwitcher.tsx
+│ ├── pages/
+│ │ ├── Home.tsx
+│ │ ├── About.tsx
+│ │ ├── Contact.tsx
+│ ├── App.tsx
+│ ├── main.tsx
+│ ├── styles/
+│ │ └── globals.css
+│ └── context/
+│ └── ThemeContext.tsx
+├── tailwind.config.js
+├── tsconfig.json
+├── .gitignore
+├── package.json
+├── README.md
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Local Setup
+
+Clone the project and install dependencies:
+
+git clone https://github.com/YOUR_USERNAME/multi_theme_switch.git
+cd multi_theme_switch
+npm install
+npm run dev
+
+
+## Below is link of deployed web application 
+multi-theme-switch-himanshu-ks-projects-eb4ddaea.vercel.app
