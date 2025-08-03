@@ -56,7 +56,7 @@ multi_theme_switch/
 
 Clone the project and install dependencies:
 
-git clone https://github.com/YOUR_USERNAME/multi_theme_switch.git
+git clone https://github.com/Himanshuk03/multi_theme_switch.git
 cd multi_theme_switch
 npm install
 npm run dev
