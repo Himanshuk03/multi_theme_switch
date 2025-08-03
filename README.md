@@ -6,7 +6,7 @@ A responsive and interactive React + TypeScript application featuring multiple t
 
 ## Live Demo
 
-👉 multi-theme-switch-himanshu-ks-projects-eb4ddaea.vercel.app 
+👉 https://multi-theme-switch-himanshu-ks-projects-eb4ddaea.vercel.app/
 
 ## Tech Stack
 
@@ -63,4 +63,4 @@ npm run dev
 
 
 ## Below also is link of deployed web application 
-multi-theme-switch-himanshu-ks-projects-eb4ddaea.vercel.app
+https://multi-theme-switch-himanshu-ks-projects-eb4ddaea.vercel.app/
